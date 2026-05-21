@@ -180,7 +180,7 @@ This approach is fundamentally more robust against occlusion, scale variation, a
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
-| **Framework** | Streamlit 1.32 | Interactive web interface for image upload & visualization |
+| **Framework** | Streamlit 1.57 | Interactive web interface for image upload & visualization |
 | **Deep Learning** | PyTorch 2.0+ | Model inference engine |
 | **Backbone** | torchvision (VGG-16) | Pre-trained feature extractor weights |
 | **Visualization** | Matplotlib (`jet` colormap) | Heatmap rendering of density maps |
@@ -232,8 +232,8 @@ The system displays the original image alongside the density heatmap and shows a
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ErenBalkis/crowd_detection.git
-cd crowd_detection
+git clone https://github.com/ErenBalkis/Smart_Transit_AI.git
+cd Smart_Transit_AI
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
