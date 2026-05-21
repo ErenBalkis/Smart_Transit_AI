@@ -1,3 +1,14 @@
+---
+title: Crowd Detection & Bus Dispatch
+emoji: 🚌
+colorFrom: blue
+colorTo: red
+sdk: streamlit
+sdk_version: 1.32.0
+app_file: app.py
+pinned: false
+---
+
 <h1 align="center">🚌 Crowd Detection & Dynamic Bus Dispatch</h1>
 <h3 align="center"><em>AI-Powered Smart City Crowd Management</em></h3>
 
@@ -16,6 +27,7 @@
 <p align="center">
   <a href="#-the-problem">Problem</a> •
   <a href="#-our-solution">Solution</a> •
+  <a href="#-screenshots">Screenshots</a> •
   <a href="#-why-density-map-regression">Why Density Maps</a> •
   <a href="#%EF%B8%8F-technical-architecture">Architecture</a> •
   <a href="#-how-it-works">How It Works</a> •
@@ -74,8 +86,20 @@ This approach is fundamentally more robust against occlusion, scale variation, a
 2. **Preprocess** → Image is normalized using ImageNet standards
 3. **Predict** → CSRNet generates a 2D density heatmap
 4. **Count** → Sum all pixel values = estimated crowd size
-5. **Decide** → If count > 50 → 🚌 **Dispatch Extra Bus alert triggered**
-6. **Visualize** → Original image + heatmap displayed side-by-side
+5. Decide → If count > 50 → 🚌 **Dispatch Extra Bus alert triggered**
+6. Visualize → Original image + heatmap displayed side-by-side
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/ss-1.png" width="80%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/ss-2.png" width="80%" />
+</p>
 
 ---
 
@@ -219,8 +243,8 @@ The system displays the original image alongside the density heatmap and shows a
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ErenBalkis/Smart_Transit_AI.git
-cd Smart_Transit_AI
+git clone https://github.com/ErenBalkis/crowd_detection.git
+cd crowd_detection
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
@@ -258,7 +282,7 @@ The app will open at `http://localhost:8501`.
 ## 📁 Project Structure
 
 ```
-Smart_Transit_AI/
+crowd_detection/
 ├── app.py                 # Streamlit application + CSRNet model definition
 │                          # ├─ CSRNet class (VGG-16 frontend + dilated backend)
 │                          # ├─ Model loading with CPU mapping
