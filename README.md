@@ -1,14 +1,3 @@
----
-title: Crowd Detection & Bus Dispatch
-emoji: 🚌
-colorFrom: blue
-colorTo: red
-sdk: streamlit
-sdk_version: 1.32.0
-app_file: app.py
-pinned: false
----
-
 <h1 align="center">🚌 Crowd Detection & Dynamic Bus Dispatch</h1>
 <h3 align="center"><em>AI-Powered Smart City Crowd Management</em></h3>
 
