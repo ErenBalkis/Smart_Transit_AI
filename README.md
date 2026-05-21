@@ -219,8 +219,8 @@ The system displays the original image alongside the density heatmap and shows a
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ErenBalkis/crowd_detection.git
-cd crowd_detection
+git clone https://github.com/ErenBalkis/Smart_Transit_AI.git
+cd Smart_Transit_AI
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
@@ -258,7 +258,7 @@ The app will open at `http://localhost:8501`.
 ## 📁 Project Structure
 
 ```
-crowd_detection/
+Smart_Transit_AI/
 ├── app.py                 # Streamlit application + CSRNet model definition
 │                          # ├─ CSRNet class (VGG-16 frontend + dilated backend)
 │                          # ├─ Model loading with CPU mapping
